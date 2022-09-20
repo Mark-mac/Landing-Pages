@@ -15,6 +15,7 @@ body{
     background: -o-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
     background: -ms-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
     background: linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    backgroung-image: codes.jpg;
     background-size: cover;
     background-repeat: no-repeat;  
     position: relative;
