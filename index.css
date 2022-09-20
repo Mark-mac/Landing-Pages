@@ -1,0 +1,419 @@
+*, :root, ::after, ::before, body{
+    padding: 0;
+    margin: 0;
+}
+
+/* #################################Mobile < 400px ######################################### */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(../Files/Images/codes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    position: relative;
+    box-sizing: border-box;
+   }
+   .indexbodycontainer{
+       height: 100vh;
+       width: 100%;
+       box-sizing: border-box;
+       position: relative;
+       display: flex;
+       flex-direction: row;
+   }
+   .index-container-one{
+       clip-path: polygon(0 0, 40% 0%, calc(50% + 40vw) 100%, 0% 100%);
+       margin-right: -40vh;
+       z-index: 10;
+       position: relative;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8));
+       height: 100%;
+       width: 100%;
+       box-sizing: border-box;
+   }
+   .index-container-two{
+      /* clip-path: polygon(-10% 0, 100% 0%, 100% 100%, 60% 100%); */
+      position: relative;
+      /* background: aqua; */
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+   }
+   .indextop{
+       height: 60vh;
+       width: 100%;
+       box-sizing: border-box;
+       background-image: linear-gradient(rgba(45, 3, 137, 0.8), rgba(0, 0, 0, 0.8));
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       position: relative;
+   }
+   .index-logo{
+       height: 30%;
+       width: 30%;
+       position: relative;
+       margin-right: 9em;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       /* background-color: green; */
+   }
+   .index-logo img{
+       clip-path: circle(55%);
+       height: 100%;
+       width: 100%;
+   }
+   .index-p{
+       width: 60%;
+       position: relative;
+       left: -3em;
+       background-image: linear-gradient(rgba(45, 3, 137, 0.8), rgba(0, 0, 0, 0.8));
+       padding: 0.5em;
+       box-sizing: border-box;
+   }
+   .index-p p{
+       color: white;
+       font-size: 0.6em;
+   }
+   .indexbtn{
+       height: 10vh;
+       width: 100%;
+       position: relative;
+       margin: 3em auto 0px auto;
+       box-sizing: border-box;
+       /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8)); */
+   }
+   .indexbtn a{
+       width: 40%;
+       height: 70%;
+       position: relative;
+       margin-left: 3em;
+       display: grid;
+       place-items: center;
+       text-decoration: none;
+       border-radius: 10px;
+       /* background-color: red; */
+   }
+   
+   .indexbtn a:hover{
+      cursor: default;
+   }
+   
+   .indexbtn button{
+       height: 100%;
+       width: 100%;
+       border-radius: 10px;
+       font-size: 0.8em;
+       border: none;
+       background-color: rgba(108, 5, 198, 1);
+       color: white;
+   }
+   
+   .indexbtn button:hover{
+       background-color: rgb(139, 7, 255);
+       color: white;
+       cursor: pointer;
+   }
+   
+   .indexbtn button:active{
+       box-shadow: 0px 0px 5px 2px  rgb(139, 7, 255);
+   }
+   
+   .socials{
+       height: 10vh;
+       width: 100%;
+       position: absolute;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       align-items: center;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8));
+       left: 0;
+       top: 90%;
+       box-sizing: border-box;
+   }
+   .socials-logo{
+       height: 20px;
+       width: 20px;
+       position: relative;
+       left: -1em;
+       /* background-color: green; */
+   }
+   .socials-logo a{
+       width: 100%;
+       height: 100%;
+   }
+   .socials-logo a:hover{
+       cursor: pointer;
+   }
+   .socials-logo img{
+       height: 100%;
+       width: 100%;
+   }
+
+
+
+    /* ##############################tablet 400px - 700px############################### */
+
+@media screen and (min-width: 400px) {
+    .index-container-one{
+        clip-path: polygon(0 0, 50% 0%, calc(40% + 40vw) 100%, 0% 100%);
+        margin-right: -40vh;
+    }
+    .index-logo{
+        height: 30%;
+        width: 40%;
+        margin-right: 10em;
+    }
+    .index-p{
+        width: 60%;
+        left: -3.7em;
+    }
+    .index-p p{
+        font-size: 0.7em;
+    }
+    .indexbtn button{
+        font-size: 0.8em;
+
+    }
+    .indexbtn a{
+        margin-left: 4em;
+        /* background-color: red; */
+    }
+    .socials-logo{
+        height: 25px;
+        width: 25px;
+    }
+       
+}
+
+
+    /* ##############################tablet 400px - 700px############################### */
+
+    @media screen and (min-width: 700px) {
+        .index-container-one{
+            clip-path: polygon(0 0, 50% 0%, calc(50% + 40vh) 100%, 0% 100%);
+            margin-right: -40vh;
+        }
+        .index-logo{
+            height: 40%;
+            width: 40%;
+            margin-right: 14em;
+        }
+        .index-p{
+            width: 60%;
+            left: -5em;
+        }
+        .index-p p{
+            font-size: 0.75em;
+        }
+        .indexbtn button{
+            font-size: 0.9em;
+    
+        }
+        .indexbtn a{
+            margin-left: 5.5em;
+            /* background-color: red; */
+        }
+        .socials-logo{
+            height: 25px;
+            width: 25px;
+            left: -2.5em;
+        }
+           
+    }
+    
+
+    /* ##############################laptop 1000px - 1300px############################### */
+
+@media screen and (min-width: 1000px) {
+body{
+ height: 100vh;
+ width: 100vw;
+ background-image: linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(../Files/Images/codes.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;  
+ position: relative;
+ box-sizing: border-box;
+}
+.indexbodycontainer{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.index-container-one{
+    clip-path: polygon(0 0, 70% 0%, calc(70% + 40vh) 120%, 0% 100%);
+    margin-right: -40vh;
+    z-index: 10;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8));
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.index-container-two{
+   /* clip-path: polygon(-10% 0, 100% 0%, 100% 100%, 60% 100%); */
+   position: relative;
+   /* background: aqua; */
+   height: 100%;
+   width: 100%;
+   box-sizing: border-box;
+}
+.indextop{
+    height: 60vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(45, 3, 137, 0.8), rgba(0, 0, 0, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.index-logo{
+    height: 70%;
+    width: 50%;
+    position: relative;
+    margin-right: 15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: green; */
+}
+.index-logo img{
+    clip-path: circle(55%);
+    height: 100%;
+    width: 100%;
+}
+.index-p{
+    width: 80%;
+    position: relative;
+    left: -4em;
+    background-image: linear-gradient(rgba(45, 3, 137, 0.8), rgba(0, 0, 0, 0.8));
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+.index-p p{
+    color: white;
+    font-size: 0.9em;
+}
+.indexbtn{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    margin: 3em auto 0px auto;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8)); */
+}
+.indexbtn a{
+    width: 40%;
+    height: 70%;
+    position: relative;
+    margin-left: 10em;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.indexbtn a:hover{
+   cursor: default;
+}
+
+.indexbtn button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: rgba(108, 5, 198, 1);
+    color: white;
+}
+
+.indexbtn button:hover{
+    background-color: rgb(139, 7, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.indexbtn button:active{
+    box-shadow: 0px 0px 5px 2px  rgb(139, 7, 255);
+}
+
+.socials{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(45, 3, 137, 0.8));
+    left: 0;
+    top: 90%;
+    box-sizing: border-box;
+}
+.socials-logo{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: -2em;
+    /* background-color: green; */
+}
+.socials-logo a{
+    width: 100%;
+    height: 100%;
+}
+.socials-logo a:hover{
+    cursor: pointer;
+}
+.socials-logo img{
+    height: 100%;
+    width: 100%;
+}
+}
+
+
+
+
+/* ##############################large screens 1300############################### */
+
+    @media screen and (min-width: 1300px) {
+        .index-container-one{
+            clip-path: polygon(0 0, 70% 0%, calc(70% + 30vh) 100%, 0% 100%);
+            margin-right: -30vh;
+        }
+        .index-logo{
+            height: 50%;
+            width: 50%;
+            margin-right: 14em;
+        }
+        .index-p{
+            width: 60%;
+            left: -5em;
+        }
+        .index-p p{
+            font-size: 1em;
+        }
+        .indexbtn button{
+            font-size: 1em;
+    
+        }
+        .indexbtn a{
+            margin-left: 12em;
+            /* background-color: red; */
+        }
+        .socials-logo{
+            height: 30px;
+            width: 30px;
+            left: -2.5em;
+        }
+           
+    }
