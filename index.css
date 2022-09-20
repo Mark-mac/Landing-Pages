@@ -9,6 +9,12 @@ body{
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: -webkit-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: -webkit-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: -moz-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: -o-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: -ms-linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
+    background: linear-gradient(rgba(45, 3, 137, 0.1), rgba(0, 0, 0, 0.1)), url(codes.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
     position: relative;
